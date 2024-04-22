@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Horse Riding Booking</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Horse Riding Booking</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#login">Login</a>
+            <a href="#signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div>
+                <h3>Horse Rides</h3>
+                <form id="rideBookingForm">
+                    <label for="rideDate">Date:</label>
+                    <input type="date" id="rideDate" name="date" required>
+                    <label for="rideTime">Time:</label>
+                    <input type="time" id="rideTime" name="time" required>
+                    <button type="submit">Book Horse Ride</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Riding Lessons</h3>
+                <form id="lessonBookingForm">
+                    <label for="lessonDate">Date:</label>
+                    <input type="date" id="lessonDate" name="date" required>
+                    <label for="lessonTime">Time:</label>
+                    <input type="time" id="lessonTime" name="time" required>
+                    <button type="submit">Book Riding Lesson</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Traveling with Horses</h3>
+                <form id="travelBookingForm">
+                    <label for="travelDate">Date:</label>
+                    <input type="date" id="travelDate" name="date" required>
+                    <button type="submit">Book Traveling with Horses</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
